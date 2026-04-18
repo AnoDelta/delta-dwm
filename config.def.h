@@ -101,9 +101,9 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *browsercmd[] = { "firefox", NULL };
 static const char *editorcmd[] = { "emacs", NULL };
 static const char *filecmd[] = { "thunar", NULL };
-static const char *wallpapercmd[] = { "/home/delta/.local/bin/wallpicker", NULL };
+static const char *wallpapercmd[] = { "$HOME/.local/bin/wallpicker", NULL };
 static const char *lockcmd[] = { "slock", NULL };
-static const char *screenshotcmd[] = { "scrot", "-s", "~/Pictures/ss_$(date +%Y%m%d_%H%M%S).png", NULL };
+static const char *screenshotcmd[] = { "/bin/sh", "-c", "$HOME/.local/bin/screenshot.sh", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
